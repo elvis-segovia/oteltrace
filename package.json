@@ -1,0 +1,33 @@
+{
+  "name": "oteltrace",
+  "version": "0.1.0",
+  "description": "Lightweight OpenTelemetry tracing wrapper with per-request span store for Node.js services.",
+  "license": "MIT",
+  "author": "elvis-segovia",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./instrumentation": "./instrumentation.js"
+  },
+  "files": [
+    "index.js",
+    "instrumentation.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "1.9.0",
+    "@opentelemetry/exporter-trace-otlp-http": "0.216.0",
+    "@opentelemetry/resources": "2.7.1",
+    "@opentelemetry/sdk-node": "0.216.0",
+    "@opentelemetry/semantic-conventions": "1.40.0",
+    "flat": "6.0.1"
+  }
+}
